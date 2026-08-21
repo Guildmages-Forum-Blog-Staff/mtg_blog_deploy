@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="MTG 中文網站, Guildmages Forum, mtg blog, mtg decktech, mtg 近代, mtg 先驅, mtg, mtg pioneer, mtg modern, 魔風集會所">
+    
+    
+    <meta name="author" content="Guildmages&#39; Forum Staff">
+    
+    
+    <script>!function(){function e(e){const t="dark"===e,c=document.documentElement;c.classList.add(e),c.classList.remove(t?"light":"dark"),c.style.colorScheme=e}const t=function(){try{const e=localStorage.getItem("REDEFINE-THEME-STATUS");if(e){const{isDark:t}=JSON.parse(e);return t?"dark":"light"}}catch(e){}return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}();e(t),matchMedia("(prefers-color-scheme: dark)").addEventListener("change",({matches:t})=>{localStorage.getItem("REDEFINE-THEME-STATUS")||e(t?"dark":"light")}),function(){const e=()=>{const e=document.body;return!!e&&(e.classList.add(t+"-mode"),!0)};if(e())return;const c=new MutationObserver(()=>{e()&&c.disconnect()});c.observe(document.documentElement,{childList:!0,subtree:!0})}()}()</script>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    
+    
+    <link rel="canonical" href="https://guildmagesforum.tw/how-does-rest-in-peace-work/">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+        
+        <meta name="description" content="Guildmages’ Forum 魔風集會所是一個繁體中文的部落格，致力於推廣魔法風雲會競技型賽制。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RIP是如何作用的？">
+<meta property="og:url" content="https://guildmagesforum.tw/How-does-Rest-in-Peace-Work/index.html">
+<meta property="og:site_name" content="Guildmages&#39; Forum 魔風集會所">
+<meta property="og:description" content="Guildmages’ Forum 魔風集會所是一個繁體中文的部落格，致力於推廣魔法風雲會競技型賽制。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://guildmagesforum.tw/images/logo.webp">
+<meta property="article:published_time" content="2025-09-08T01:13:30.000Z">
+<meta property="article:modified_time" content="2026-08-21T07:56:52.270Z">
+<meta property="article:author" content="Jru">
+<meta property="article:tag" content="JruMTG">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://guildmagesforum.tw/images/logo.webp">
+    
+    
+        
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-JFWD3SG42T"></script>
+        <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-JFWD3SG42T")</script>
+    
+    
+    <link rel="icon" type="image/png" href="/images/logo.jpg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.jpg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/logo.jpg">
+    
+    
+    <title>
+        
+            RIP是如何作用的？ | Guildmages&#39; Forum 魔風集會所
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    
+    
+    
+    
+    
+    
+    
+        
+<script src="/js/build/libs/anime.min.js"></script>
+
+    
+
+    <script id="hexo-configurations">window.config={hostname:"guildmagesforum.tw",root:"/",language:"en",path:"search.json"},window.theme={articles:{style:{font_size:"18px",line_height:1.5,image_border_radius:"14px",image_alignment:"center",image_caption:!1,link_icon:!1,delete_mask:!1,title_alignment:"left",headings_top_spacing:{h1:"3.2rem",h2:"2.4rem",h3:"1.9rem",h4:"1.6rem",h5:"1.4rem",h6:"1.3rem"}},word_count:{enable:!0,count:!0,min2read:!0},author_label:{enable:!1,auto:!1,list:[]},code_block:{copy:!0,style:"mac",highlight_theme:{light:"github",dark:"vs2015"},font:{enable:!1,family:null,url:null}},toc:{enable:!0,max_depth:6,number:!0,expand:!0,init_open:!0},copyright:{enable:!0,default:"cc_by_nc_sa"},lazyload:!0,pangu_js:!0,recommendation:{enable:!0,title:"或許你會喜歡",limit:6,mobile_limit:4,placeholder:"/images/wallhaven-wqery6-light.webp",skip_dirs:[]}},colors:{primary:"#A31F34",secondary:null,default_mode:"light"},global:{fonts:{chinese:{enable:!1,family:null,url:null},english:{enable:!1,family:null,url:null},title:{enable:!1,family:null,url:null}},content_max_width:"1000px",sidebar_width:"210px",hover:{shadow:!0,scale:!1},scroll_progress:{bar:!0,percentage:!0},website_counter:{url:"https://events.vercount.one/js",enable:!0,site_pv:!0,site_uv:!0,post_pv:!0},single_page:!0,preloader:{enable:!0,custom_message:null},side_tools:{gear_rotation:!0,auto_expand:!1},open_graph:{enable:!0,image:"/images/logo.webp",description:null},google_analytics:{enable:!0,id:"G-JFWD3SG42T"}},home_banner:{enable:!0,style:"fixed",image:{light:"/images/wallhaven-wqery6-light.webp",dark:"/images/wallhaven-wqery6-dark.webp"},title:"Welcome to Guildmages' Forum!",subtitle:{text:["各路旅法師的集散地","讓玩家額外有個 +1/+1 指示物","釋放各路玩家的限制","盡情享受遊戲","不瘋魔不成活"],hitokoto:{enable:!1,show_author:!1,api:"https://v1.hitokoto.cn"},typing_speed:100,backing_speed:50,starting_delay:500,backing_delay:1500,loop:!0,smart_backspace:!0},text_color:{light:"#fff",dark:"#d1d1b6"},text_style:{title_size:"2.8rem",subtitle_size:"1.5rem",line_height:1.2},custom_font:{enable:!1,family:null,url:null},social_links:{enable:!1,style:"default",links:[{icon:"fa-brands fa-github",url:null},{icon:"fa-brands fa-twitter",url:null},{icon:"fa-solid fa-at",url:"you@example.com"},{icon:"fa-brands fa-telegram",url:null},{icon:"/images/custom-icon.svg",url:null}],qrs:[{icon:"fa-brands fa-weixin",qr:null},{icon:"/images/custom-icon.svg",qr:null}]}},plugins:{feed:{enable:!0},aplayer:{enable:!1,type:"fixed",audios:[{name:null,artist:null,url:null,cover:null,lrc:null}]},mermaid:{enable:!1,version:"11.4.1",theme:{light:"default",dark:"dark"}}},version:"2.9.0",navbar:{auto_hide:!0,color:{left:"#f78736",right:"#367df7",transparency:35},width:{home:"1200px",pages:"1000px"},links:{Home:{path:"/",icon:"fa-regular fa-house"},Categories:{path:"/categories",icon:"fa-regular fa-folder"},"About Us":{path:"/about",icon:"fa-regular fa-user"},"Contact Us":{path:"/Contact-Us",icon:"fa-regular fa-mailbox-flag-up"},Links:{icon:"fa-regular fa-link",submenus:{"Guildmages' Forum 粉專":"https://www.facebook.com/guildmagesforumtw","台南猴王的耍猴日常":"https://www.facebook.com/TainanMonkeyKing","豬鼻子的mtg世界":"https://www.facebook.com/Pignosemtgworld","Faintmama の TCG實驗室":"https://www.facebook.com/share/1B41iFRdki",GTPlayer:"https://www.facebook.com/share/1CapWPjweM","多明納里亞圖書館":"https://dominarialibrary.com","塞克斯的MTG日誌":"http://76vezffd.blogspot.com/","Kappa The Gathering":"https://www.facebook.com/profile.php?id=61558862427620","Mystic Zone":"http://mysticzonetw.blogspot.com/","Spark Double Podcast":"https://linktr.ee/sparkdouble","勇德大叔的日常":"https://www.facebook.com/UncleJund","約力昂大叔 Uncle Yorion":"https://www.facebook.com/profile.php?id=100068751771443","鳥不喇基":"https://www.facebook.com/profile.php?id=100063848411689","下水道鱷魚":"https://facebook.com/profile.php?id=61567687550022","紅的喜氣":"https://www.facebook.com/profile.php?id=100083415367398","寬麵的遊戲頻道":"https://www.facebook.com/profile.php?id=100083345574225","TCG 英文筆記":"https://tcglearning.com/","黑色魔鬼":"https://www.facebook.com/share/17LYnAQyLK","只會打Fun Deck的APaul":"https://www.facebook.com/share/18c5jp2e6N","未央 p 也想玩 mtg":"https://www.facebook.com/share/1B8SnBZ8GX","皮皮韓魔風單卡特區":"https://www.facebook.com/share/1Ah8becrrV"}}},search:{enable:!0,preload:!0}},page_templates:{friends_column:2,tags_style:"blur",masonry:{batch_size:12,initial_batch_size:24}},home:{sidebar:{enable:!0,position:"left",first_item:"info",announcement:null,show_on_mobile:!0,links:{Categories:{path:"/categories",icon:"fa-regular fa-folder"},"About Us":{path:"/about",icon:"fa-regular fa-user"},"Contact Us":{path:"/Contact-Us",icon:"fa-regular fa-mailbox-flag-up"}}},article_date_format:"auto",excerpt_length:200,categories:{enable:!0,limit:3},tags:{enable:!0,limit:3}},footer:{runtime:!0,icon:'<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>',start:"2023/8/23 00:00:00",statistics:!0,customize:"Guildmages' Forum 魔風集會所的部分內容是威世智 (Wizards of the Coast) 同好內容政策允許的非官方同好內容。 <br> 本網站所提供之魔法風雲會 (Magic the Gathering, MTG) 文字和圖形資訊，包括卡片圖像、魔法力符號和部分卡片資訊的中文翻譯，版權均為孩之寶集團的子公司威世智所有。 <br> Guildmages' Forum 魔風集會所並不由威世智製作、背書、支持，亦不隸屬於該公司。 <br> 上述聲明以外的所有內容均屬於 2023 © Guildmages' Forum 魔風集會所以及其協力創作者們。",icp:{enable:!1,number:null,url:null}},footerStart:"2023/8/23 00:00:00",mermaid:{style:{light:"default",dark:"dark"}}},window.lang_ago={second:"%s seconds ago",minute:"%s minutes ago",hour:"%s hours ago",day:"%s days ago",week:"%s weeks ago",month:"%s months ago",year:"%s years ago"},window.i18n={search:"Search...",toc:"On this page",prev:"Prev",next:"Next",prev_posts:"Prev posts",next_posts:"Next posts",page:"Page %d",recent_posts:"Recent Posts",share:"Share",powered_by:"POWERED BY %s",theme:"THEME",rss_feed:"RSS Feed",category:"Category",categories:"Categories",tag:"Tag",tags:"Tags",post:"Post",posts:"Posts",tagcloud:"Tag Cloud",comment:"Comment",comments:"Comments",home:"Home",archive:"Archive",archives:"Archives",top:"TOP",sticky:"Sticky","go-back-home":"Go Back Home",masonry_loading:"Loading photos...",image_viewer:"Image viewer",close:"Close",exif:{title:"EXIF",cards:{camera:"Camera",lens:"Lens",exposure:"Exposure",other:"Other"},fields:{make:"Brand",model:"Model",date_taken:"Date taken",lens_model:"Lens",focal_length:"Focal length",focus_mode:"Focus mode",shutter:"Shutter",aperture:"Aperture",iso:"ISO",exposure_program:"Exposure program",exposure_compensation:"Exposure compensation",metering_mode:"Metering mode",flash:"Flash",white_balance:"White balance",latitude:"Latitude",longitude:"Longitude",altitude:"Altitude"},status:{loading:"Loading...",no_exif:"No EXIF available",library_missing:"EXIF library not loaded",image_source_missing:"Image source unavailable",unavailable:"EXIF unavailable (blocked by CORS or missing metadata)",flag_unavailable:"EXIF unavailable"}},about:"About",changelog:"Changelog",links:"Links",link:"Link",friends:"Friends",friend:"Friend",timeline:"Timeline",shuoshuo:"Shuoshuo",bookmarks:"Bookmarks",site_uv:"VISITOR COUNT",site_pv:"TOTAL PAGE VIEWS",read_more:"Read more",wordcount:"Words",min2read:"Mins",status:"Status",runtime:"Blog up for",days:"days",hours:"hrs",minutes:"Min",seconds:"Sec",optimized_by:"and Optimized by Evan",rights:"All Rights Reserved",site_posts:"%s posts in total",site_wordcount:"%s words in total",copyright:{author:"Author",title:"Title",link:"Link",create_time:"Created at",update_time:"Updated at",license_title:"License",license_content:"This work is licensed under %s.",all_rights_reserved:"All Rights Reserved &#169; %s",public_domain:"This work is in the public domain."},ago:{second:"%s seconds ago",minute:"%s minutes ago",hour:"%s hours ago",day:"%s days ago",week:"%s weeks ago",month:"%s months ago",year:"%s years ago"},create_time:"Created",update_time:"Updated",expired:"This post is written %s days ago, and the content may not be up to date."},window.data={masonry:!1}</script>
+    
+    
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<style>.tooltip{text-decoration:none;position:relative;display:inline;opacity:1;z-index:unset}.tooltip>span{display:none;color:#000}.tooltip>span img{margin:0}.tooltip:hover>span{display:block;position:absolute;top:12px;left:32px;z-index:1000;overflow:hidden;padding:8px}.mtgcard{max-width:300px!important}@media (min-width:769px){.markdown-body>table:not(.not-markdown):has(.tooltip){overflow:visible}}.mtgcard-error{display:inline-block;padding:2px 8px;border:1px solid #c00;background:#fff0f0;color:#900;border-radius:3px;font-size:.9em}.mtgcard-error::before{content:"\26A0  "}.mtgcard-frame--rotated{display:block;margin:16px auto;position:relative;width:418px;aspect-ratio:418/300;max-width:100%;container-type:inline-size}.mtgcard.mtgcard--rotated{position:absolute;top:50%;left:50%;height:100cqi;width:auto;aspect-ratio:300/418;margin:0;transform:translate(-50%,-50%) rotate(90deg);max-width:none!important}</style><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Guildmages' Forum 魔風集會所" type="application/atom+xml">
+</head>
+
+
+<body>
+	<div class="progress-bar-container">
+	
+	<span class="scroll-progress-bar"></span>
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	
+	
+	
+	
+</div>
+
+<style>:root{--preloader-background-color:#fff;--preloader-text-color:#000}@media (prefers-color-scheme:dark){:root{--preloader-background-color:#202124;--preloader-text-color:#fff}}@media (prefers-color-scheme:light){:root{--preloader-background-color:#fff;--preloader-text-color:#000}}@media (max-width:600px){.ml13{font-size:2.6rem!important}}.preloader{display:flex;flex-direction:column;gap:1rem;align-items:center;justify-content:center;position:fixed;padding:12px;top:0;right:0;bottom:0;left:0;width:100vw;height:100vh;background-color:var(--preloader-background-color);z-index:1100;transition:opacity .2s ease-in-out}.ml13{font-size:3.2rem;color:var(--preloader-text-color);letter-spacing:-1px;font-weight:500;font-family:Chillax-Variable,sans-serif;text-align:center}.ml13 .word{display:inline-flex;flex-wrap:wrap;white-space:nowrap}.ml13 .letter{display:inline-block;line-height:1em}</style>
+
+<div class="preloader">
+    <h2 class="ml13">
+        Guildmages&#39; Forum 魔風集會所
+    </h2>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+        words = ['Guildmages\'', 'Forum', '魔風集會所']
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            if ( word === "Forum" ) {
+                textWrapper.appendChild(document.createElement('br'));
+            }
+            else {
+                textWrapper.appendChild(document.createTextNode(' '));
+            }
+        });
+
+        var animation = anime.timeline({ loop: true })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [20, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                filter: ['blur(5px)', 'blur(0px)'],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 300 + 20 * i,
+            })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [0, -20],
+                opacity: [1, 0],
+                filter: ['blur(0px)', 'blur(5px)'],
+                easing: "easeInExpo",
+                duration: 1000,
+                delay: (el, i) => 15 * i,
+                complete: function() {
+                    hidePreloader();
+                }
+            }, '-=700');
+
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(hidePreloader, 5000); // Call hidePreloader after 5000 milliseconds if not already called by animation
+        });
+
+        function hidePreloader() {
+            var preloader = document.querySelector('.preloader');
+            preloader.style.opacity = '0';
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 200);
+        }
+    </script>
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <style>.centered-text{text-align:center;margin:0;line-height:1.5}</style>
+    <div class="navbar-content transition-navbar">
+        <div class="left">
+            
+            <a class="logo-title centered-text" href="/">
+                
+                Guildmages&#39; Forum<br>
+                魔風集會所
+                
+            </a>
+        </div>
+
+        <div class="right">
+            
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                
+                                <a href="/">
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                
+                                <a href="/categories">
+                                    <i class="fa-regular fa-folder fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                
+                                <a href="/about">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    ABOUT US
+                                    
+                                </a>
+
+                                
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                
+                                <a href="/Contact-Us">
+                                    <i class="fa-regular fa-mailbox-flag-up fa-fw"></i>
+                                    CONTACT US
+                                    
+                                </a>
+
+                                
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                
+                                <a class="has-dropdown" href="#" onclick="&#34;return" false;&#34;>
+                                    <i class="fa-regular fa-link fa-fw"></i>
+                                    LINKS
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/guildmagesforumtw">
+                                                    GUILDMAGES&#39; FORUM 粉專
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/TainanMonkeyKing">
+                                                    台南猴王的耍猴日常
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/Pignosemtgworld">
+                                                    豬鼻子的MTG世界
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/share/1B41iFRdki">
+                                                    FAINTMAMA の TCG實驗室
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/share/1CapWPjweM">
+                                                    GTPLAYER
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dominarialibrary.com">
+                                                    多明納里亞圖書館
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="http://76vezffd.blogspot.com/">
+                                                    塞克斯的MTG日誌
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/profile.php?id=61558862427620">
+                                                    KAPPA THE GATHERING
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="http://mysticzonetw.blogspot.com/">
+                                                    MYSTIC ZONE
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://linktr.ee/sparkdouble">
+                                                    SPARK DOUBLE PODCAST
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/UncleJund">
+                                                    勇德大叔的日常
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/profile.php?id=100068751771443">
+                                                    約力昂大叔 UNCLE YORION
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/profile.php?id=100063848411689">
+                                                    鳥不喇基
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://facebook.com/profile.php?id=61567687550022">
+                                                    下水道鱷魚
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/profile.php?id=100083415367398">
+                                                    紅的喜氣
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/profile.php?id=100083345574225">
+                                                    寬麵的遊戲頻道
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://tcglearning.com/">
+                                                    TCG 英文筆記
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/share/17LYnAQyLK">
+                                                    黑色魔鬼
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/share/18c5jp2e6N">
+                                                    只會打FUN DECK的APAUL
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/share/1B8SnBZ8GX">
+                                                    未央 P 也想玩 MTG
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.facebook.com/share/1Ah8becrrV">
+                                                    皮皮韓魔風單卡特區
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full" href="/">
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full" href="/categories">
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-regular fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full" href="/about">
+                            <span>
+                                ABOUT US
+                            </span>
+                            
+                                <i class="fa-regular fa-user fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full" href="/Contact-Us">
+                            <span>
+                                CONTACT US
+                            </span>
+                            
+                                <i class="fa-regular fa-mailbox-flag-up fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full" navbar-data-toggle="submenu-Links">
+                            <span>
+                                LINKS
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-Links">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/guildmagesforumtw">GUILDMAGES&#39; FORUM 粉專</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/TainanMonkeyKing">台南猴王的耍猴日常</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/Pignosemtgworld">豬鼻子的MTG世界</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/share/1B41iFRdki">FAINTMAMA の TCG實驗室</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/share/1CapWPjweM">GTPLAYER</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://dominarialibrary.com">多明納里亞圖書館</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="http://76vezffd.blogspot.com/">塞克斯的MTG日誌</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=61558862427620">KAPPA THE GATHERING</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="http://mysticzonetw.blogspot.com/">MYSTIC ZONE</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://linktr.ee/sparkdouble">SPARK DOUBLE PODCAST</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/UncleJund">勇德大叔的日常</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100068751771443">約力昂大叔 UNCLE YORION</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100063848411689">鳥不喇基</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://facebook.com/profile.php?id=61567687550022">下水道鱷魚</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100083415367398">紅的喜氣</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100083345574225">寬麵的遊戲頻道</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://tcglearning.com/">TCG 英文筆記</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/share/17LYnAQyLK">黑色魔鬼</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/share/18c5jp2e6N">只會打FUN DECK的APAUL</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/share/1B8SnBZ8GX">未央 P 也想玩 MTG</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class="text-third-text-color text-xl" target="_blank" rel="noopener" href="https://www.facebook.com/share/1Ah8becrrV">皮皮韓魔風單卡特區</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+                
+                    
+                    
+                    
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">42</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">43</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">396</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="https://i.meee.com.tw/u4dSxJs.png" alt="RIP是如何作用的？" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75">
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color">RIP是如何作用的？</h1>
+			</div>
+			
+		</div>
+
+		
+			
+			
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			
+				<a href="/tags/jrumtg/" class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+					<img src="https://i.imgur.com/JoQEQJA.png">
+				</a>
+			
+			<div class="info flex flex-col justify-between">
+				
+					
+					<ul class="name text-default-text-color text-lg font-semibold flex">
+						
+							&nbsp;&nbsp;
+							<a href="/tags/jrumtg/" class="author flex items-center">
+								Jru
+							</a>
+							
+						</ul>
+					
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-09-08 09:13:30</span>
+        <span class="mobile">2025-09-08 09:13:30</span>
+        <span class="hover-info">Created</span>
+    </span>
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/mtg-rules/">MTG Rules</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-keyboard"></i>&nbsp;<span>4.2k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>14 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/sld/96/rest-in-peace">得享安息</a>（後簡稱RIP）一直是最高效的墳場針對之一，在這個動不動就把墳場當額外資源的時代更顯得尤為重要，這次就讓我們看看RIP是如何影響區域移動相關規則的？</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/fFFNrYi.png" alt="前言"></p>
+<hr>
+<h2 id="RIP單卡解析"><a href="#RIP單卡解析" class="headerlink" title="RIP單卡解析"></a>RIP單卡解析</h2><img class="mtgcard w-full" lazyload src="/images/loading.svg" data-src="https://cards.scryfall.io/large/front/9/0/9008f826-9e24-4ba1-b17e-1638b7cdd78d.jpg?1783929772">
+
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/sld/96/rest-in-peace">得享安息</a></strong> ：<br>當得享安息進戰場時，放逐所有墳墓場中的所有牌。<br>如果任一張牌或衍生物將從任何地方置入墳墓場，改為將它放逐。</p>
+</blockquote>
+<p><strong><font color="#FF0000">●如果任一張牌或衍生物將從任何地方置入墳墓場，改為將它放逐。</font></strong></p>
+<p>看到 <strong>改為</strong> 就代表這是個 <strong>替代性效應</strong> ，也就是說有任何牌或Token要進入墳墓場時，他們的移動終點會直接改寫為放逐區，壓跟不會經過墳墓場。原則上有關RIP的問題，都是圍繞著如何處理這條有關區域移動的替代性效應展開的。</p>
+<p>另外之所以要特別強調Token，是因為Token不屬於牌，雖然Token進入墳墓場後也會立刻消失沒錯，但還是能觸發與進入墳墓場相關的異能。只擋牌不擋Token的著名範例之一是<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/tdc/176/dauthi-voidwalker">道西虛空行者</a>，擋不住<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/woe/101/not-dead-after-all">死裡逃生</a>的<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/twoe/17/wicked-cursed">惡人角色靈氣Token</a>。</p>
+<p><strong><font color="#FF0000">●當得享安息進戰場時，放逐所有墳墓場中的所有牌。 </font></strong></p>
+<p>RIP雖然是墳場殺手，但其實它的靜止式異能只影響它在場期間將進入墳墓場的牌，至於RIP進場前已經在墳墓場的牌，則是靠著這條ETB處理的，既然是觸發式異能，那當然是會上堆疊可以被回應。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/7AMfPdK.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/m20/77/tales-end">傳說終結</a></strong> ：<br>反擊目標起動式異能，觸發式異能或傳奇咒語。</p>
+</blockquote>
+<p>假設你回應RIP的ETB，用傳說終結康了這個放逐墳場的觸發式異能，那麼你就能保住目前已經在墳場的牌，不過因為傳說終結結算時RIP已經在場，所以傳說終結自己還是會被放逐。</p>
+<hr>
+<h2 id="RIP規則範例"><a href="#RIP規則範例" class="headerlink" title="RIP規則範例"></a>RIP規則範例</h2><p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/GCW3u4E.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/inr/97/blood-artist">鮮血畫家</a></strong> ：<br>每當鮮血畫家或另一個生物死去時，目標玩家失去1點生命而你獲得1點生命。</p>
+</blockquote>
+<p>RIP與死去觸發異能的互動，是最常在實戰中遇到、也最容易讓新手困惑的問題。先讓我們看看 <strong>死去</strong> 的定義：</p>
+<ul>
+<li>700.4. 死去（die）一詞表示「從戰場進入墳墓場」。</li>
+</ul>
+<p>死去在MTG中是個被定義過的專有名詞，特指從戰場進入墳墓場這事件，但RIP又會讓進入墳墓場改為放逐，也就是說RIP在場時，沒有任何永久物可以死去， <strong><font color="#FF0000">RIP會將死去改為放逐</font></strong> ，任何死去時觸發的異能自然也都不會觸發，畢竟死去這個事件壓根沒發生。</p>
+<details class="relative my-4 border border-border-color bg-second-background-color rounded-md blue" data-header-exclude><summary class="px-4 py-2 rounded-md shadow-[0_0_2px_0_var(--shadow-color-1)] cursor-pointer not-markdown"><i class="fa-solid fa-chevron-right"></i>關於死去的雜談</summary><div class="content p-4"><p>雖然就語意上，會讓人覺得只有生物（頂多加個鵬洛客）適用死去這個詞，但其實MTG對死去的定義中，並沒有限定永久物的類別，只是以前幾乎只對生物使用死去這個詞，在描述其他類別永久物進入墳場觸發的異能時，大多還是用完整的寫法。</p>
+<p>但從近期的新牌張描述中可以發現，老威也開始把死去這個詞拓展到非生物類別上了，當然這兩種描述本來規則上就是等價的，所以不會造成甚麼規則層面的影響，只是在語感上可能讓人不是很適應。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/i8AylxM.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/mh3/100/marionette-apprentice">弄偶學徒</a></strong> ：<br>每當另一個由你操控的生物或神器從戰場進入墳墓場時，每位對手各失去1點生命。<br>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/eoe/118/susurian-voidborn">蘇述黎洞生者</a></strong> ：<br>每當此生物或另一個由你操控的生物或神器死去時，目標對手失去1點生命且你獲得1點生命。</p>
+</blockquote>
+</div></details>
+
+
+
+
+
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/mlTNeQL.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/2x2/123/seasoned-pyromancer">幹練烈焰術士</a></strong> ：<br>當幹練烈焰術士進戰場時，棄兩張牌，然後抽兩張牌。每以此法棄掉一張非地牌，便派出一個1&#x2F;1紅色元素衍生生物。</p>
+</blockquote>
+<p>在場上有RIP時，幹練烈焰術士觸發ETB棄牌，假設我棄了2張非地牌，那些牌會因RIP從進入墳場改為被放逐，那麼幹練烈焰術士有辦法派出2隻Token生物嗎？</p>
+<p>棄牌（Discard）是一個關鍵字動作，定義如下：</p>
+<ul>
+<li>701.9a 棄掉一張牌指，將它從其擁有者的手上移到該玩家的墳墓場中。</li>
+</ul>
+<p>棄牌是一個動作，動作的結果是牌從手牌進入墳墓場，RIP的替代性效應會改變這個動作的結果，但棄牌事件依舊有發生，幹練烈焰術士會知道自己棄了2張非地牌，並且派出2隻Token生物。</p>
+<blockquote>
+<p>這題與上一題單獨看應該都很好理解，甚至對許多玩家來說已經是理所當然的基本規則，但如果要追問，明明死去跟棄牌的定義規則條目看起來如此相似，為何RIP會使死去不再是死去，但棄牌仍然是棄牌，腦袋或許就會打結了。<br>簡單的說，是死去的定義本身就比較特別，它的定義很嚴格的就是 「 從戰場進入墳墓場 」 這一事件，也可以說是對這一事件的縮寫，所以事件內容變了，條件檢查沒過，當然就不算死去了。<br>這個概念雖然可以從規則原文書中解讀出來，但描述確實不太直觀，也沒有額外的條目去輔助解說此概念，所以在RIP的單卡Q&amp;A上，也能找到這兩概念的釋疑條目：<br><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/JI0kfgY.png"></p>
+</blockquote>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/Wu2ieUV.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/fdn/244/progenitus">祖神獸</a></strong> ：<br>如果祖神獸將從任何區域進入墳墓場，則改為展示祖神獸，並將它洗入其擁有者的牌庫。</p>
+</blockquote>
+<p>在場上有RIP的情況下祖神獸被從手牌棄掉，它會被放逐還是洗回牌庫？</p>
+<p>祖神獸從何區域進入墳場改為洗回牌庫，這也是一種替代性效應，當多個替代性效應打算對同一物件作用時，會由這物件的操控者（或如果沒有操控者則其擁有者）決定應用的順序，以這題的情境來說，實質上就是決定哪個效應生效了。</p>
+<p>結論是，祖神獸的擁有者，可以決定它要被放逐還是洗回牌庫。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/0IFsy5r.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/dsk/197/say-its-name">直呼其名</a></strong> ：<br>磨三張牌。然後你可以將一張生物或地牌從你的墳墓場移回你手上。<br>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/dft/159/dredgers-insight">挖掘客的洞察</a></strong> ：<br>當此結界進場時，磨四張牌。你可以將一張神器，生物或地牌從所磨掉之牌中置於你手上。</p>
+</blockquote>
+<p>假設目前墳場為空，且RIP在場上，使用直呼其名、挖掘客的洞察，是否能將牌加入手牌？</p>
+<p>直呼其名是完全沒救了，因為這張牌的運作流程是先把牌磨進墳場，之後再從墳場回收牌，RIP在場時墳場根本不會有任何牌給你回收。</p>
+<p>但挖掘客的洞察就不太一樣了，這種磨N張後 <strong>從以此法所磨掉之牌中</strong> 回收牌的效應，碰到影響區域移動的替代性效應，只要那個區域是公開區域，這個效應就追蹤得到那些牌。</p>
+<ul>
+<li>701.13c 提及所磨的牌的效應可以在其從牌庫移動到的區域找到該牌，只要該區域是公開區域。</li>
+</ul>
+<p>所以哪怕被挖掘客的洞察磨掉的4張牌都不會經過墳場直接被放逐，它還是能追蹤到那4張牌，並從中回收一張符合條件的牌。</p>
+<p>同理，RIP在場時<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/dsc/220/grist-the-hunger-tide">飢潮格蕊斯</a>使用[+1]，並且牌庫頂是個昆蟲生物牌，即使那張牌會改成進入放逐區，但格蕊斯仍然知道自己磨到一張生物牌，並繼續並重複此流程。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/Cvm2ox2.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/inr/54/biolume-egg-biolume-serpent">生輝奇卵</a></strong> ：<br>當你犧牲生輝奇卵，在下一個結束步驟開始時，將它在其擁有者的操控下移回戰場且已轉化。</p>
+</blockquote>
+<p>在你在場上有RIP的情況下犧牲生輝奇卵，它還有辦法在結束步驟轉化後回場嗎？ 這裡要先注意到一個關鍵，生輝奇卵的異能觸發條件是 <strong>當你犧牲它時</strong> ，而不是當它死去時，RIP無法替換掉它被犧牲這件事。</p>
+<p>那麼現在的問題就是，生輝奇卵從進入墳場被改為放逐後，它的異能有沒有辦法把它從放逐區撿回來了，這裡需要用到一條與區域移動有關的規則：</p>
+<ul>
+<li>400.7e 當一個物件從一個區域轉移到另一個區域時，如果移動後的區域是公開區域，所觸發的觸發式異能（例如，「當此靈氣從戰場進入墳場時」）能夠在移動後區域中找到該異能觸發時的物件成為的新物件。</li>
+</ul>
+<p>放逐區是個公開區域，所以生輝奇卵的異能追蹤的到當初的觸發源生物牌，並繼續執行效果，你能夠在結束步驟將其已轉化的移回戰場。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/4RK868V.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/fdn/572/disenchant">消除魔障</a></strong> ：<br>消滅目標神器或結界。</p>
+</blockquote>
+<p>使用消除魔障消滅RIP後，消除魔障與RIP各自在墳場還放逐區？</p>
+<p>先來看看消除魔障，瞬間巫術在結算時，處理順序是執行完咒語的所有效果後，再將其放進墳場。因為消除魔障處理效果時就已將RIP消滅，等到它結算完畢要進入墳場時，RIP早已不在場上，所以消除魔障會正常進入墳場。</p>
+<p>再來看看RIP，這條規則解讀可能不是這麼好理解。有關區域移動的替代性效應，是在這個區域移動事件發生 <strong>之前</strong> ，遊戲會檢查有無替代性效應將修改這個事件的結果，如果有的話，就套用該效應。</p>
+<ul>
+<li>400.6. 如果一個物件將從一個區域轉移到另一個區域，首先確定移動此物件的事件。如果物件將移動到公開區域，且其擁有者將會可以在該區域檢視之，其擁有者檢視之並查看其是否具有影響該移動的異能。如果該物件將移動到戰場，每位將會可以在該區域檢視之的其他玩家亦如此作。然後相應的替代性效應對該事件生效，無論它來自物件本身或其他地方。如果任何效應或規則試圖用數個對立或抵觸的方式影響同一個物件，物件的操控者（如果沒有操控者則由擁有者）選擇哪個效應生效，以及該效應產生什麼影響。（注意，對同一物件的多個影響可能相互抵觸；例如，兩個同時「消滅」的效應。）然後該事件移動物件。</li>
+</ul>
+<p>套用到這題中，檢查替代性效應是否適用的時機，是RIP已經確定將要被消除魔障消滅，在 <strong>被消滅的前一刻</strong> 做檢查，而不是正在被消滅中才看看該往哪邊跑。因為此時RIP還在場上，這表示進墳改為放逐的替代性效應依然有效，所以RIP會因為自己的效應而被放逐。</p>
+<p><strong><font color="#FF0000">結論：消除魔障進墳場、RIP放逐</font></strong></p>
+<blockquote>
+<p>因為這個案例實在太有名又太反直覺了，所以你在Scryfall等卡片搜尋引擎找RIP時，都可以在下方找到這條規則釋疑：<br><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/9EGZdTD.png" alt="RIP_QA"></p>
+</blockquote>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/3uU59S8.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/m20/33/planar-cleansing">淨化時空</a></strong> ：<br>消滅所有非地永久物。</p>
+</blockquote>
+<p>那麼今天換成在場上有RIP時，使用淨化時空消滅所有非地永久物，這些永久物的去處呢？</p>
+<p>實際上這題跟上題沒有任何差別，因為其他的永久物跟RIP都是在同樣的時機被消滅的，去處也沒任何差別，所有永久物都會被放逐。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/RUlBX4X.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/inr/154/fiery-temper">火爆</a></strong> ：<br>瘋魔 <font color="#FF0000">{R}</font> （如果你棄掉此牌，將之棄到放逐區。當你如此作時，支付其瘋魔費用施放之，否則便將其置入你的墳墓場。）</p>
+</blockquote>
+<p>RIP在場上，火爆被棄掉時，是否能以瘋魔施放？</p>
+<ul>
+<li>702.35a 瘋魔為代表了兩個異能的關鍵字。第一個屬於靜止式異能，當該牌在玩家的手上時生效。第二個屬於觸發式異能，於第一部分生效後才生效。瘋魔[費用]意指，「若玩家將棄掉此牌，則該玩家將其棄掉，但改為將其放逐，而非置於其墳墓場」以及「當此牌以此法被放逐時，其擁有者可透過支付[費用]來施放之，而不是支付其魔法力費用」。若該玩家未如此作，則將此牌置入其墳墓場。</li>
+</ul>
+<p>瘋魔牌被棄掉時，會因為自身異能的替代性效應改為放逐，這與RIP的替代性效應是對同一事件生效的，你可以選擇適用瘋魔還RIP的放逐效應，你適用瘋魔的放逐後，會觸發瘋魔的第二段能力 「 可支付瘋魔費用來施放之 」 ，如果支付了瘋魔費用，那就像一般棄牌時一樣正常的透過瘋魔來施放。如果不支付瘋魔費用，那麼火爆會嘗試進入墳場，但因為RIP的關係，它還是會被放逐。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/LyZBglR.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/bfz/102/wasteland-strangler">荒原絞殺體</a></strong> ：<br>當荒原絞殺體進戰場時，你可以將一張由對手擁有的牌從放逐區置入該玩家的墳墓場。若你如此作，則目標生物得-3&#x2F;-3直到回合結束。</p>
+</blockquote>
+<p>RIP在場時，荒原絞殺體是否可以用ETB來讓目標生物-3&#x2F;-3 ？</p>
+<p>答案是可以，雖然那張牌你嘗試從放逐區置入墳場的牌，最後還是會被放逐，但是卻會成為一個新的物件，你可以用這招讓歷險中的<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/eld/115/bonecrusher-giant-stomp">碎骨巨人</a>失去正在歷險中的屬性。</p>
+<ul>
+<li>406.7. 如果一個在放逐區的物件被放逐，它不會改變區域，但它視為一個剛被放逐的新物件。</li>
+</ul>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/UYuPmvM.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/usg/73/energy-field">能量力場</a></strong> ：<br>防止非你所操控之來源對你造成的所有傷害。<br>當任何牌被置入你的墳墓場，則犧牲能量力場。</p>
+</blockquote>
+<p>這是一個與RIP有趣的小搭配，因為RIP在場時不會有任何牌進入墳場，所以能量力場能夠發揮強大的保護力。</p>
+<p><img lazyload src="/images/loading.svg" data-src="https://i.meee.com.tw/4cw4o1g.png"></p>
+<blockquote>
+<p>● <strong><a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/all/121/helm-of-obedience">服從頭盔</a></strong> ：<br>{X}，{T}：目標對手磨一張牌，然後重複此流程，直到通過這種方式將一個生物牌或X張牌置入其墳墓場，以先到者為準。如果以這種方式將一個或多個生物牌置入墳墓場，則犧牲服從頭盔並將其中一個在你的操控下放進戰場。 X 不能為 0。</p>
+</blockquote>
+<p>服從頭盔Combo是一個RIP的經典搭配（將RIP換成<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/dsk/106/leyline-of-the-void">虛空地脈</a>也是常見配置之一），因為RIP的關係，對手不會有牌磨進墳場的時候，所以只要服從頭盔一起動，對手的牌庫就會瞬間清空。</p>
+<hr>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>RIP的墳場剋制能力，從誕生至今一直都是最頂尖的存在，有時處理一些專注在死去觸發異能的犧牲套牌也有奇效。</p>
+<p>越是古老的賽制，墳場就越是容易成為玩家的第二手牌，但先不論永久賽制，光是現今的標準，墳場利用率就已經高的嚇人了。</p>
+<p>目前環境第一霸主的Vivi鍋，單論場面的正拳展開能力，就已經是頂尖級別，在這之上它也有非常強大的墳場利用能力，這資源量之多連控制都望塵莫及，並且因為墳場的利用點實在太多了，像<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/dsk/248/ghost-vacuum">吸魂器</a>這樣一回拔一張的墳場對策，老實說只能做到部份牽制，但還是很難真正抑制住它的墳場資源。目前筆者實卡的標準套牌幾乎都沾了白色，RIP就是我積極混白色的動力之一。（對上Vivi鍋時，有RIP再配上<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://scryfall.com/card/otj/15/high-noon">日正當中</a>，那牽制力真是妙不可言）</p>
+
+		</div>
+
+		
+			
+			
+			
+			
+			<div class="article-footer flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+				<div class="info flex flex-col justify-between">
+					
+						
+
+						
+							<div class="author-container">
+								<div class="item">
+									<div class="avatar-column">
+										<a href="/tags/jrumtg/" class="author flex items-center name text-default-text-color text-lg font-semibold flex">
+											<div class="avatar flex-shrink-0p-[1px]">
+												<img src="https://i.imgur.com/JoQEQJA.png">
+											</div>
+										</a>
+									</div>
+									<div class="author-intro items-center">
+										<div class="author-name">
+											<a href="/tags/jrumtg/" class="text-default-text-color font-semibold p-10px">
+												Jru
+											</a>
+										</div>
+										
+										<div>
+											
+												<div class="page-template-content markdown-body">
+													構築與限制賽皆打，構築有玩賽制 : 標準、先驅、近代、EDH（海怪禁單挑、官禁多人休閒向），薪傳與純普也有研究但身邊沒環境。
+												</div>
+											
+												<div class="page-template-content markdown-body">
+													主力賽制為標準，喜歡打重視去除與資源的慢節奏套牌。
+												</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						
+					
+				</div>
+			</div>
+		
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> RIP是如何作用的？</li>
+        <li><strong>Author:</strong> Jru</li>
+        <li><strong>Created at
+                :</strong> 2025-09-08 09:13:30</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2026-08-21 15:56:52
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://guildmagesforum.tw/How-does-Rest-in-Peace-Work/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+  <div class="recommended-article px-2 sm:px-6 md:px-8">
+   <div class="recommended-desktop">
+    <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
+     <i aria-hidden="true"></i><span>或許你會喜歡</span>
+    </div>
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/Something-About-Earthbend/" title="運土的二三事" rel="bookmark">
+  <img src="https://i.meee.com.tw/f2AaUzz.png" alt="運土的二三事" class="!max-w-none">
+  <span class="title">運土的二三事</span>
+</a><a class="recommended-article-item" href="/How-to-Describe-an-Object/" title="如何描述一個物件？" rel="bookmark">
+  <img src="https://i.imgur.com/rlgVpG8.jpg" alt="如何描述一個物件？" class="!max-w-none">
+  <span class="title">如何描述一個物件？</span>
+</a><a class="recommended-article-item" href="/What-does-End-this-Turn-Mean/" title="「結束本回合」是甚麼意思？" rel="bookmark">
+  <img src="https://i.meee.com.tw/3UCgcK2.png" alt="「結束本回合」是甚麼意思？" class="!max-w-none">
+  <span class="title">「結束本回合」是甚麼意思？</span>
+</a><a class="recommended-article-item" href="/What-is-SBA/" title="何謂狀態動作（SBA）" rel="bookmark">
+  <img src="https://i.meee.com.tw/Q9NGHC8.png" alt="何謂狀態動作（SBA）" class="!max-w-none">
+  <span class="title">何謂狀態動作（SBA）</span>
+</a><a class="recommended-article-item" href="/Something-About-Card-Name/" title="有關名稱的二三事" rel="bookmark">
+  <img src="https://i.meee.com.tw/gBA9prQ.png" alt="有關名稱的二三事" class="!max-w-none">
+  <span class="title">有關名稱的二三事</span>
+</a><a class="recommended-article-item" href="/Layer/" title="Layer：持續性效應的互動" rel="bookmark">
+  <img src="https://i.meee.com.tw/i99FcrX.png" alt="Layer：持續性效應的互動" class="!max-w-none">
+  <span class="title">Layer：持續性效應的互動</span>
+</a></div>
+   </div>
+   <div class="recommended-mobile">
+   <div class="recommended-article-header text-xl md:text-3xl font-bold mt-10">
+     <i aria-hidden="true"></i><span>或許你會喜歡</span>
+   </div>
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/Something-About-Earthbend/" title="運土的二三事" rel="bookmark">
+  <img src="https://i.meee.com.tw/f2AaUzz.png" alt="運土的二三事" class="!max-w-none">
+  <span class="title">運土的二三事</span>
+</a><a class="recommended-article-item" href="/How-to-Describe-an-Object/" title="如何描述一個物件？" rel="bookmark">
+  <img src="https://i.imgur.com/rlgVpG8.jpg" alt="如何描述一個物件？" class="!max-w-none">
+  <span class="title">如何描述一個物件？</span>
+</a><a class="recommended-article-item" href="/What-does-End-this-Turn-Mean/" title="「結束本回合」是甚麼意思？" rel="bookmark">
+  <img src="https://i.meee.com.tw/3UCgcK2.png" alt="「結束本回合」是甚麼意思？" class="!max-w-none">
+  <span class="title">「結束本回合」是甚麼意思？</span>
+</a><a class="recommended-article-item" href="/What-is-SBA/" title="何謂狀態動作（SBA）" rel="bookmark">
+  <img src="https://i.meee.com.tw/Q9NGHC8.png" alt="何謂狀態動作（SBA）" class="!max-w-none">
+  <span class="title">何謂狀態動作（SBA）</span>
+</a></div>
+   </div>
+  </div>
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/SPM-Mechanism/">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">漫威蜘蛛人機制解析</span>
+						<span class="post-nav-item">Prev posts</span>
+					</span>
+				</a>
+			</div>
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/Second-Anniversary/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">Guildmage&#39;s Forum 魔風集會所二周年運營咨文</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.js';
+
+      (function() {
+        const startPath = location.pathname;
+        const startTime = Date.now();
+        const retryDelay = 200;
+        const retryLimit = 5000;
+
+        const runWaline = () => {
+          if (location.pathname !== startPath) {
+            return;
+          }
+
+          const container = document.getElementById('waline');
+          if (!container) {
+            if (Date.now() - startTime < retryLimit) {
+              setTimeout(runWaline, retryDelay);
+            }
+            return;
+          }
+
+          if (window.redefineWalineInstance?.destroy) {
+            window.redefineWalineInstance.destroy();
+          }
+
+          container.innerHTML = '';
+          window.redefineWalineInstance = init({
+            el: '#waline',
+            serverURL: 'https://mtg-blog-comment.vercel.app/',
+            path: location.pathname,
+            dark: 'body[class~="dark-mode"]',
+            reaction: false,
+            requiredMeta: ['nick', 'mail'],
+            emoji: [],
+                      lang: 'zh-TW',
+          });
+        };
+
+        runWaline();
+      })();
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">RIP是如何作用的？</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RIP%E5%96%AE%E5%8D%A1%E8%A7%A3%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">RIP單卡解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RIP%E8%A6%8F%E5%89%87%E7%AF%84%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">RIP規則範例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AA%9E"><span class="nav-number">4.</span> <span class="nav-text">結語</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+            <div class="customize-info my-1">Guildmages' Forum 魔風集會所的部分內容是威世智 (Wizards of the Coast) 同好內容政策允許的非官方同好內容。 <br> 本網站所提供之魔法風雲會 (Magic the Gathering, MTG) 文字和圖形資訊，包括卡片圖像、魔法力符號和部分卡片資訊的中文翻譯，版權均為孩之寶集團的子公司威世智所有。 <br> Guildmages' Forum 魔風集會所並不由威世智製作、背書、支持，亦不隸屬於該公司。 <br> 上述聲明以外的所有內容均屬於 2023 © Guildmages' Forum 魔風集會所以及其協力創作者們。</div>
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2026&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration:0.5s;color:#f54545"></i>&nbsp;&nbsp;<a href="/">Guildmages&#39; Forum Staff</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        396 posts in total
+                    </span>
+                    
+                        <span>
+                            1420.9k words in total
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://events.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io" rel="external nofollow noreferrer">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine" rel="external nofollow noreferrer">Redefine v2.9.0</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days"></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>try{function odometer_init(){document.querySelectorAll(".odometer").forEach(e=>{new Odometer({el:e,format:"( ddd).dd",duration:200})})}odometer_init()}catch(e){}</script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		
+		
+		<li class="right-bottom-tools rss flex justify-center items-center">
+			<a class="flex justify-center items-center" href="/atom.xml" target="_blank">
+				<i class="fa-regular fa-rss"></i>
+			</a>
+		</li>
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container" role="dialog" aria-modal="true" aria-label="Image viewer">
+	<button class="image-viewer-close" type="button" aria-label="Close">
+		<i class="fa-solid fa-xmark"></i>
+	</button>
+	<button class="image-viewer-prev" type="button" aria-label="Prev">
+		<i class="fa-solid fa-chevron-left"></i>
+	</button>
+	<div class="image-viewer-frame">
+		<img src="" alt="">
+	</div>
+	<div class="image-viewer-exif-panel hidden absolute left-1/2 bottom-20 -translate-x-1/2 w-[min(92vw,420px)] max-h-[60vh] overflow-hidden rounded-2xl bg-background-color-transparent-80 p-4 text-left shadow-redefine-flat backdrop-blur-md" role="dialog" aria-label="EXIF" aria-hidden="true">
+		<div class="flex items-center justify-between mb-3">
+			<span class="text-sm font-semibold text-first-text-color">EXIF</span>
+			<button class="image-viewer-exif-close flex h-8 w-8 items-center justify-center rounded-full bg-background-color-transparent-80 text-first-text-color transition hover:bg-background-color-transparent-40" type="button" aria-label="Close">
+				<i class="fa-solid fa-xmark text-[0.65rem]"></i>
+			</button>
+		</div>
+		<div class="image-viewer-exif-cards grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[50vh] overflow-y-auto pr-1 scrollbar-hide"></div>
+		<template class="image-viewer-exif-card-template">
+			<div class="rounded-lg bg-background-color-transparent-40 px-3 py-2">
+				<div class="image-viewer-exif-card-header flex items-center gap-2 mb-1">
+					<i class="image-viewer-exif-card-icon fa-solid fa-circle-info text-xs text-third-text-color"></i>
+					<div class="image-viewer-exif-card-title text-xs font-semibold text-first-text-color"></div>
+				</div>
+				<div class="image-viewer-exif-card-items flex flex-col gap-1"></div>
+			</div>
+		</template>
+	</div>
+	<button class="image-viewer-exif-toggle flex items-center gap-2 hidden absolute left-1/2 bottom-6 -translate-x-1/2 rounded-full border border-border-color bg-background-color-transparent-80 px-4 py-2 text-first-text-color backdrop-blur-md transition hover:bg-background-color-transparent-40" type="button" aria-label="EXIF" aria-expanded="false">
+		<i class="fa-solid fa-circle-info text-xs"></i>
+		<span class="text-xs font-semibold uppercase tracking-wider">EXIF</span>
+	</button>
+	<button class="image-viewer-next" type="button" aria-label="Next">
+		<i class="fa-solid fa-chevron-right"></i>
+	</button>
+</div>
+
+
+	
+	<div class="search-pop-overlay">
+	<div class="popup search-popup">
+		<div class="search-header">
+			<span class="search-input-field-pre">
+				<i class="fa-solid fa-keyboard"></i>
+			</span>
+			<div class="search-input-container">
+				<input autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Search..." spellcheck="false" type="search" class="search-input">
+			</div>
+			<span class="popup-btn-close">
+				<i class="fa-solid fa-times"></i>
+			</span>
+		</div>
+		<div id="search-result">
+			<div id="no-result">
+				<i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>window.swup=new Swup({plugins:[new SwupScriptsPlugin({optin:!0}),new SwupProgressPlugin,new SwupScrollPlugin({offset:80}),new SwupSlideTheme({mainElement:".main-content-body"}),new SwupPreloadPlugin],containers:["#swup"]}),window.dispatchEvent(new CustomEvent("redefine:swup:ready",{detail:{swup:window.swup}}))</script>
+
+
+
+
+	
+<script src="/js/build/main.js" type="module"></script>
+
+
+
+    
+<script src="/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+    
+<script src="/js/build/libs/pangu.min.js"></script>
+
+
+
+	
+</body>
+
+</html>
